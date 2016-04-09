@@ -1,0 +1,64 @@
+
+
+body{
+	background-color: #bbe8d7;
+}
+
+form{
+	padding-top: 10%;
+	padding-left: 18%;
+	font-family: 'Calibri';
+	font-size:20px;
+	font-weight:700;
+	color:#213b34;
+}
+
+input{
+	font-family: '微软雅黑 Light';
+	font-weight:700;
+	border:0px;
+}
+
+.SignInArea{
+	margin: 0 auto;
+	margin-top: 13%;
+    background-color: #ffffff;
+    width:600px;
+    height:350px;
+    border-radius: 20px 20px 20px 20px/20px 20px 20px 20px;
+    border:20px solid #42a085;
+}
+
+
+.button{
+	margin-left: 60%;
+	width:120px;
+	height:33px;
+	background-color: #42a085;
+	color:#FFFFFF;
+	font-size: 20px;
+}
+
+#input1{
+	width:255px;
+	font-size: 20px;
+	border-bottom: 2px dashed #42a085;
+}
+
+#input2{
+	width:260px;
+	font-size: 20px;
+	border-bottom: 2px dashed #42a085;
+}
+
+#input3{
+	width:195px;
+	font-size: 20px;
+	border-bottom: 2px dashed #42a085;
+}
+
+#input4{
+	width:290px;
+	font-size: 20px;
+	border-bottom: 2px dashed #42a085;
+}
