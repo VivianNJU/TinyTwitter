@@ -1,0 +1,99 @@
+
+/*hehe, I don't want to say anything
+*/
+
+body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	height: 100%; 
+	background-color: #bbe8d7;
+}
+
+
+.sendTwitter{
+	background-color: #fff;
+	width:1700px;
+	height:100%;
+	margin:0 auto;
+}
+
+.textarea{
+	position:absolute;
+	left:662px;
+	top:357px;
+	z-index:3;
+}
+
+hr{
+	height:3px;
+	background-color:#2e7460;
+	margin-left: 0;
+}
+
+
+
+.text{
+	font-family: '微软雅黑 Light';
+	font-weight: bold;
+	font-size:18px;
+	color:#123325;
+	border:0;
+}
+
+.link{
+	margin-left:75%;
+}
+
+.linkArea{
+	background-color: #fff;
+	width:1700px;
+	padding-top: 0.8%;
+	margin:0 auto;
+}
+a{
+	color:#1b5947;
+	font-family: 'Calibri';
+	font-size:30px;
+	font-weight:bolder;
+}
+#send{
+	font-family: 'Calibri';
+	font-size: 40px;
+	font-weight:700;
+	margin-top: 30%;
+	margin-bottom: 20%;
+}
+
+input{
+	background-color: #42a085;
+	border-radius: 5px 5px 5px 5px/5px 5px 5px 5px;
+	box-shadow: 0px 3px 10px #000;
+	color:#FFFFFF;
+	width:150px;
+	height:50px;
+	border: 0px;
+	margin-left: 72%;
+	margin-top:1%;
+}
+
+#pic1{
+	position:absolute;
+	left:180px;
+	top:70px;
+	z-index:3;
+}
+
+#pic2{
+	position:absolute;
+	left:300px;
+	top:550px;
+	z-index:2;
+}
+
+#pic3{
+	position:absolute;
+	left:604px;
+	top:324px;
+	z-index:2;
+}
