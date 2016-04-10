@@ -13,10 +13,8 @@
 	<form  id="SignForm" action="/myProject/TinyTwitter/Login.php" method="post">
   Username: &nbsp;<input id="input1" type="text" name="name"  />
 		<span class="error">* <br><br>{$nameErr}</span>
-		<br><br>
   Password: &nbsp;&nbsp;<input  type="password" id="input2" type="text" name="password" />
 		<span class="error">* <br><br>{$passwordErr}</span>
-		<br><br>
   <input class="button" type="submit" value="SUBMIT" />
 		{$success}
 </form></div>
