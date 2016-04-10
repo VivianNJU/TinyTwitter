@@ -24,7 +24,9 @@
 			-->
 		</div>
 		<p>{$articleErr}</p>
+		<div class='button'>
 		<input id="send" type="submit" name="Submit" value="SEND" >
+		</div>
 	</form>
 	<img id="pic2" src="/myProject/TinyTwitter/graphics/paper plane.png"/>
 	<img id="pic3" src="/myProject/TinyTwitter/graphics/TwitterTextArea.png"/>
