@@ -19,12 +19,18 @@ input{
 	border:0px;
 }
 
+a{
+	color:#1b5947;
+	font-family: 'Calibri';
+	font-weight:bolder;
+}
+
 .SignInArea{
 	margin: 0 auto;
-	margin-top: 13%;
+	margin-top: 12%;
     background-color: #ffffff;
     width:600px;
-    height:350px;
+    height:370px;
     border-radius: 20px 20px 20px 20px/20px 20px 20px 20px;
     border:20px solid #42a085;
 }
