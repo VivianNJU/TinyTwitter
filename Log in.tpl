@@ -12,9 +12,10 @@
 	<div class="SignInArea">
 	<form  id="SignForm" action="/myProject/TinyTwitter/Login.php" method="post">
   Username: &nbsp;<input id="input1" type="text" name="name"  />
-		<span class="error"> {$nameErr}</span>
+		<span class="error">* <br><br>{$nameErr}</span>
   Password: &nbsp;&nbsp;<input  type="password" id="input2" type="text" name="password" />
-		<span class="error"> {$passwordErr}</span>
+		<span class="error">* <br><br>{$passwordErr}</span>
+  <p>Haven't joined us?&nbsp;&nbsp;<span><a href="Register.html">Register</a></span></p>
   <input class="button" type="submit" value="SUBMIT" />
 		{$success}
 </form></div>
