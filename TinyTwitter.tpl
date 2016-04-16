@@ -11,7 +11,7 @@
 		<div class="link">
 			<span><a href="Register.html">Register</a></span>
 			<span><a href="Log in.html">Log in</a></span>
-			<span><a href="My Homepage.html">MY HOMEPAGE</a></span>
+			<span><a href="/myProject/TinyTwitter/MyHomepage.php">MY HOMEPAGE</a></span>
 		</div>
 		<hr></hr>
 	</div>
@@ -23,9 +23,8 @@
 			<!--placeholder="XXX" autofocus tabindex="1" x-webkit-speech用于悬浮
 			-->
 		</div>
-		<p>{$articleErr}</p>
-		<div class='button'>
-		<input id="send" type="submit" name="Submit" value="SEND" >
+		<div class='button'><p>{$articleErr}</p>
+			<input id="send" type="submit" name="Submit" value="SEND" >
 		</div>
 	</form>
 	<img id="pic2" src="/myProject/TinyTwitter/graphics/paper plane.png"/>
