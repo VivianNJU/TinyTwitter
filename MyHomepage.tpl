@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-	<link rel="stylesheet" type="text/css" href="My Homepage.css"></link>
+	<link rel="stylesheet" type="text/css" href="css/MyHomepage.css"></link>
 	<meta charset="UTF-8">
 	<title>MY HOMEPAGE</title>
 </head>
@@ -28,7 +28,7 @@
             </script>-->
 			{section name=blogNum loop=$blog}
 			<tr>
-				<td><p{$time[blogNum]}</p><p>{$blog[blogNum]}</p></td>
+				<td><p name="time" id="time">{$blog[blogNum].time}</p><p>{$blog[blogNum].content}</p></td>
 			</tr>
 			{/section}
 			<!--<tr>
