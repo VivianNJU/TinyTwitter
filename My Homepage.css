@@ -1,13 +1,11 @@
 body {
 	margin: 0;
-	padding: 0;
-	height: 1500px; 
+	padding: 0; 
 	background-color: #bbe8d7;
 	}
 
 
 	a{
-	text-decoration:none;
 	color:#1b5947;
 	font-family: 'Calibri';
 	font-size:30px;
@@ -37,7 +35,10 @@ body {
 		margin-left: 80px;
 		margin-top: 0;
 		font-family: '微软雅黑 Light';
+		font-size: 20px;
 		font-weight: 700;
+		width:910px;
+		word-break:break-all;
 	}
 
 	.link{
@@ -54,16 +55,12 @@ body {
 	.twitter{
 	/*box-shadow: 0 0 0 10px red,0 0 0 20px green;*/
 	background-color: #bbe8d7;
-	margin-top: 11%;
-	margin-left:20.5%;
-	width:57%;
+	margin-top: 209px;
+	margin-left:388px;
+	width:1090px;
 	border:7px dashed #42a085;
-	margin-bottom: 200px;
 	}
 
-	.text{
-	margin-bottom: 50%;
-	}
 
 	#pic1{
 	position:absolute;
@@ -97,9 +94,16 @@ body {
 	position:absolute;
 	left:340px;
 	top:309px;
-	height:100%;
-	width:1195px;
+	/*height:100%;*/
+	/*width:1195px;*/
 	z-index:-1;
+	}
+
+	#pic6{
+	position:absolute;
+	left:340px;
+	z-index:-1;
+	margin-bottom: 50px;
 	}
 
 	#time{
@@ -107,4 +111,6 @@ body {
 		margin-right: 70px;
 		margin-top: 50px;
 	}
-	</style>
+	#TwitterConetent{
+		width: 500px;
+	}
