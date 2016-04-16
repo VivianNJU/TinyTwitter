@@ -7,12 +7,16 @@ $name = $email  = $password1 =  $password2 = $success = "";
 
 include("./smarty/libs/Smarty.class.php");
 define('SMARTY_ROOT', './smarty');
-$smarty = new Smarty();
-$smarty->template_dir = SMARTY_ROOT."/templates/";
-$smarty->compile_dir = SMARTY_ROOT."/templates_c/";
-$smarty->config_dir = SMARTY_ROOT."/configs/";
-$smarty->cache_dir = SMARTY_ROOT."/cache/";
-$smarty->caching = false;
+if(!isset($smarty)){
+    include("./smarty/libs/Smarty.class.php");
+    $smarty = new Smarty();
+    define('SMARTY_ROOT', './smarty');
+    $smarty->caching = false;
+    $smarty->template_dir = SMARTY_ROOT."/templates/";
+    $smarty->compile_dir = SMARTY_ROOT."/templates_c/";
+    $smarty->config_dir = SMARTY_ROOT."/configs/";
+    $smarty->cache_dir = SMARTY_ROOT."/cache/";
+}
 
 
 
@@ -71,7 +75,7 @@ if($nameErr == null&&$emailErr == null&&$password1Err == null&&$password2Err == 
     }else{
         $emailErr = "This email address has existed!";
     }
-    /*while($row = mysqli_fetch_array($query)){
+    while($row = mysqli_fetch_array($query)){
         if($row['user_email'] == $email){
             $emailErr = "This email address has existed!";
         }else{
@@ -79,15 +83,21 @@ if($nameErr == null&&$emailErr == null&&$password1Err == null&&$password2Err == 
             $result = mysqli_query($dbc,$query2);
             $success = "Success!";
         }
-    }*/
+    }
     mysqli_close($dbc);
 }
 
-$smarty->assign("nameErr", $nameErr);
-$smarty->assign("password1Err", $password1Err);
-$smarty->assign("password2Err", $password2Err);
-$smarty->assign("emailErr", $emailErr);
-$smarty->assign("success", $success);
-$smarty->display("Register.tpl");
+if(isset($_SESSION['user_id'])){
+    require_once ("TinyTwitter.php");
+}else if($success=="Success!"){
+    require_once ("Login.php");
+}else{
+    $smarty->assign("nameErr", $nameErr);
+    $smarty->assign("password1Err", $password1Err);
+    $smarty->assign("password2Err", $password2Err);
+    $smarty->assign("emailErr", $emailErr);
+    $smarty->assign("success", $success);
+    $smarty->display("Register.tpl");
+}
 
 ?>
