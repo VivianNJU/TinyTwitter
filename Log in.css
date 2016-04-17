@@ -36,14 +36,15 @@ a{
 
 
 .button{
-	margin-top: 4%;
-	margin-left: 60%;
+	position:absolute;
+	top:495px;
+	left:1070px;
+	z-index: 2;
 	width:120px;
 	height:33px;
 	background-color: #42a085;
 	color:#FFFFFF;
 	font-size: 20px;
-	font-weight: 700;
 }
 
 #input1{
