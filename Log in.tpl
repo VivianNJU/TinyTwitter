@@ -15,6 +15,7 @@
 		<span class="error"> <br>{$nameErr}</span><br>
 		Password: &nbsp;&nbsp;<input  type="password" id="input2" type="text" name="password" />
 		<span class="error"> <br>{$passwordErr}</span><br>
+		<p>Haven't joined us?&nbsp;&nbsp;<span><a href="/myProject/TinyTwitter/Register.php">Register</a></span></p>
 		<input class="button" type="submit" value="SUBMIT" />
 		<br>{$success}
 	</form></div>
